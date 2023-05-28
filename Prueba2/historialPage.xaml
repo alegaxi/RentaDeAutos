@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             x:Class="Prueba2.historialPage"
+             xmlns:local="clr-namespace:Prueba2"
+             Title="historialPage">
+    
+    <ContentPage.BindingContext>
+        <local:CarrosView/>
+    </ContentPage.BindingContext>
+
+    <StackLayout BackgroundColor="LightPink">
+        <Label Text="Consultar ganancias por fecha" FontSize="Body"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="30*"/>
+            </Grid.ColumnDefinitions>
+            <DatePicker x:Name="dtFechaGanancia1" TextColor="Black" Grid.Column="0" />
+            <DatePicker x:Name="dtFechaGanancia2" TextColor="Black" Grid.Column="1" />
+            <Button x:Name="ConsultarGananciasFecha" Text="Consultar" Grid.Column="2" BackgroundColor="LightSkyBlue" TextColor="Black" FontSize="15" Clicked="ConsultarGananciasFecha_Clicked"/>
+        </Grid>
+        <Label Text="Consultar ganancias por carro" FontSize="Body"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60*"/>
+                <ColumnDefinition Width="30*"/>
+            </Grid.ColumnDefinitions>
+            <editors:SfComboBox x:Name="comboBoxGanancia" WidthRequest="250" MaxDropDownHeight="250" ItemsSource="{Binding DatosCarros}" 
+                                TextMemberPath="Name" DisplayMemberPath="Name" BackgroundColor="LightCyan" SelectionChanged="comboBoxGanancia_SelectionChanged"/>
+            <Button x:Name="ConsultarGananciasCarro" Text="Consultar" Grid.Column="2" BackgroundColor="LightGreen" TextColor="Black" FontSize="15" Clicked="ConsultarGananciasCarro_Clicked"/>
+        </Grid>
+        <Label Text=""/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Total Ganancias:" Grid.Column="0" FontSize="12"/>
+            <Entry x:Name="tbGanancias" Placeholder="Ganancias" Grid.Column="1" BackgroundColor="LightCyan" HeightRequest="50" FontSize="12" /> 
+        </Grid>
+        <syncfusion:SfDataGrid x:Name="dataGrid" Grid.Row="0" Grid.Column="0" CellDoubleTapped="dataGrid_CellDoubleTapped">
+
+        </syncfusion:SfDataGrid>
+    </StackLayout>
+</ContentPage>

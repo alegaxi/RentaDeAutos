@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+             x:Class="Prueba2.galeriaPage"
+             Title="galeriaPage">
+    <ScrollView >
+        <StackLayout>
+            <Image Source="jeta2022.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: Jetta" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Volkswagen" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2022" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 1500" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnJetta" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnJetta_Clicked"/> 
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="camry2021.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: Camry" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Toyota" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2021" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 1800" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnCamry" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnCamry_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="mustang2021.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: Mustang" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Ford" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2021" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 1000" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnMustang" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnMustang_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="jeep2022.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: Wrangler" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Jeep" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modeo: 2022" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 2000" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnWrangler" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnWrangler_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="audi2022.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: A3" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Audi" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2022" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 2800" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnAudi" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnAudi_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="kicks2021.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: Kicks" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Nissan" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2021" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 1200" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnKicks" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnKicks_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="challenger2021.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: Challenger" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Dodge" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2021" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 2700" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnChallenger" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnChallenger_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="tahoe2022.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: Tahoe" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Chevrolet" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2022" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 2700" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnTahoe" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnTahoe_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="mazda2021.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: CX-5" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Mazda" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2021" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 1700" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnMazda" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnMazda_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="bmw2022.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: X5" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: BMW" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2022" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 3500" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnBMW" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnBMW_Clicked"/>
+            <Label Text="" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="corvette2022.jpg" WidthRequest="300"/>
+            <Label Text="Nombre: Corvette" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Marca: Chevrolet" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Modelo: 2021" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Precio por dia: 3000" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnCorvette" Text="Rentar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnCorvette_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

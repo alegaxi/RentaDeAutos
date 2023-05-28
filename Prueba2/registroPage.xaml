@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             xmlns:calendar="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
+             x:Class="Prueba2.registroPage"
+             xmlns:local="clr-namespace:Prueba2"
+             Title="registroPage"
+             Appearing="ContentPage_Appearing">
+    <ContentPage.BindingContext>
+        <local:CarrosView/>
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout>
+            <Label  Text="ID RENTA" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" CharacterSpacing="2" Margin="0,10,0,0"/>
+            <Entry x:Name="tbIdRenta" Placeholder="ID" PlaceholderColor="Black" HorizontalOptions="Center" />
+            <Label  Text="DATOS CLIENTES" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" CharacterSpacing="2" Margin="0,10,0,0"/>
+            <Entry x:Name="tbNombre" Placeholder="Nombre" PlaceholderColor="Black" HorizontalOptions="Center" Completed="tbNombre_Completed"/>
+            <Entry x:Name="tbTelefono" Placeholder="Telefono" PlaceholderColor="Black" HorizontalOptions="Center" MaxLength="10"/>
+            <Entry x:Name="tbDomicilio" Placeholder="Domicilio" PlaceholderColor="Black" HorizontalOptions="Center"/>
+
+            <Label  Text="DATOS CARRO" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" CharacterSpacing="2" Margin="0,10,0,0"/>
+            <Label Text="ID" x:Name="IDCarro" VerticalOptions="Center" HorizontalOptions="Center" FontSize="12" CharacterSpacing="2" Margin="0,10,0,0"/> 
+            <editors:SfComboBox x:Name="comboBox"
+                                WidthRequest="250"
+                                MaxDropDownHeight="250"
+                                ItemsSource="{Binding DatosCarros}"
+                                TextMemberPath="Name"
+                                DisplayMemberPath="Name"
+                                SelectionChanged="comboBox_SelectionChanged"
+                                >
+                
+            </editors:SfComboBox>
+
+            <Entry x:Name="tbNombreCarro" Placeholder="Nombre" PlaceholderColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="tbMarca" Placeholder="Marca" PlaceholderColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="tbModelo" Placeholder="Modelo" PlaceholderColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="tbPrecioDia" Placeholder="Precio por dia" PlaceholderColor="Black" HorizontalOptions="CenterAndExpand" />
+
+            <Label  Text="DIAS" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" CharacterSpacing="2" Margin="0,10,0,0"/>
+            <DatePicker x:Name="dtFechaInicio" TextColor="Black" Format="dd/MM/yyyy" HorizontalOptions="CenterAndExpand"/>
+            <DatePicker x:Name="dtFechaFinal" TextColor="Black" Format="dd/MM/yyyy" HorizontalOptions="CenterAndExpand"/>
+
+            <Entry x:Name="tbPrecioTotal" Placeholder="Total" PlaceholderColor="Black" HorizontalOptions="Center" Focused="tbPrecioTotal_Focused"/>
+
+            <Button x:Name="btnRegistrar" Text="Registrar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnRegistrar_Clicked_1"/>
+            <Button x:Name="btnEliminar" Text="Eliminar" VerticalOptions="Center" BackgroundColor="LightSalmon" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnEliminar_Clicked"/>
+            <Button x:Name="btnCancelar" Text="Cancelar" VerticalOptions="Center" BackgroundColor="LightSalmon" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnCancelar_Clicked"/>
+            <Button x:Name="btnActualizar" Text="Actualizar" VerticalOptions="Center" BackgroundColor="LightGreen" Margin="20,5,20,5" TextColor="Black" FontSize="15" Clicked="btnActualizar_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
